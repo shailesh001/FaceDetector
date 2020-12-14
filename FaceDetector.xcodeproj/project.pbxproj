@@ -13,6 +13,8 @@
 		F2FADD7E25877CA10088FDAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FADD7D25877CA10088FDAA /* Preview Assets.xcassets */; };
 		F2FADD8925877CA10088FDAA /* FaceDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FADD8825877CA10088FDAA /* FaceDetectorTests.swift */; };
 		F2FADD9425877CA10088FDAA /* FaceDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FADD9325877CA10088FDAA /* FaceDetectorUITests.swift */; };
+		F2FADDA525877D3F0088FDAA /* Faces.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FADDA425877D3F0088FDAA /* Faces.swift */; };
+		F2FADDAA258780820088FDAA /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FADDA9258780820088FDAA /* Views.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		F2FADD8F25877CA10088FDAA /* FaceDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FADD9325877CA10088FDAA /* FaceDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectorUITests.swift; sourceTree = "<group>"; };
 		F2FADD9525877CA10088FDAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2FADDA425877D3F0088FDAA /* Faces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faces.swift; sourceTree = "<group>"; };
+		F2FADDA9258780820088FDAA /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				F2FADD7625877C9F0088FDAA /* FaceDetectorApp.swift */,
 				F2FADD7825877C9F0088FDAA /* ContentView.swift */,
+				F2FADDA425877D3F0088FDAA /* Faces.swift */,
+				F2FADDA9258780820088FDAA /* Views.swift */,
 				F2FADD7A25877CA10088FDAA /* Assets.xcassets */,
 				F2FADD7F25877CA10088FDAA /* Info.plist */,
 				F2FADD7C25877CA10088FDAA /* Preview Content */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FADDAA258780820088FDAA /* Views.swift in Sources */,
+				F2FADDA525877D3F0088FDAA /* Faces.swift in Sources */,
 				F2FADD7925877C9F0088FDAA /* ContentView.swift in Sources */,
 				F2FADD7725877C9F0088FDAA /* FaceDetectorApp.swift in Sources */,
 			);
