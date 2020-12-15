@@ -131,7 +131,7 @@ extension UIImage {
             case .downMirrored: return .downMirrored
             case .leftMirrored: return .leftMirrored
             case .rightMirrored: return .rightMirrored
-            default: return .up // This needs fixing
+            default: return .up // This needs fixing?
         }
     }
 }

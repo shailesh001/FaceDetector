@@ -34,6 +34,10 @@ struct ContentView: View {
         self.faces = []
         self.image?.detectFaces { result in
             self.faces = result
+            
+            if let image = self.image, let annotatedImage = result?.drawnOn(image) {
+                self.image = annotatedImage
+            }
         }
     }
     
