@@ -62,21 +62,24 @@ struct ContentView_Previews: PreviewProvider {
 
 extension ContentView {
     private func mainView() -> AnyView {
-        return AnyView(NavigationView {
-            MainView(image: image ?? placeHolderImage, text: "\(faceCount) face\(faceCount == 1 ? "" : "s")") {
-                TwoStateButton(text: "Detect Faces", disabled: !detectionEnabled, action: getFaces)
-            }
-            .padding()
-            .navigationBarTitle(Text("FDDemo"), displayMode: .inline)
-            .navigationBarItems(leading: Button(action: summonImagePicker) {
-                    Text("Select")
-                },
-                trailing: Button(action: summonCamera) {
-                    Image(systemName: "camera")
-                    
-                }.disabled(!cameraEnabled)
+        return AnyView(
+                NavigationView {
+                    MainView(image: image ?? placeHolderImage, text: "\(faceCount) face\(faceCount == 1 ? "" : "s")") {
+                        TwoStateButton(text: "Detect Faces", disabled: !detectionEnabled, action: getFaces)
+                    }
+                    .padding()
+                    .navigationBarTitle(Text("FDDemo"), displayMode: .inline)
+                    .navigationBarItems(
+                        leading: Button(action: summonImagePicker) {
+                            Text("Select")
+                        },
+                        trailing: Button(action: summonCamera) {
+                            Image(systemName: "camera")
+                        }
+                        .disabled(!cameraEnabled)
+                    )
+                }
             )
-        })
     }
     
     private func imagePickerView() -> AnyView {

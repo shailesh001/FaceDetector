@@ -15,10 +15,7 @@ extension UIImage {
         let request = VNDetectFaceRectanglesRequest()
         
         DispatchQueue.global().async {
-            let handler = VNImageRequestHandler(
-                cgImage: image,
-                orientation: self.cgImageOrientation
-            )
+            let handler = VNImageRequestHandler(cgImage: image, orientation: self.cgImageOrientation)
             
             try? handler.perform([request])
             
